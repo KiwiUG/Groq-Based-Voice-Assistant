@@ -112,4 +112,4 @@ To add more applications or commands:
 
 ## Video of Working:
 
-[![Demonstration video](https://youtu.be/atKrsi1nr5M)]
+[ ![ Demonstration video ](https://youtu.be/atKrsi1nr5M?si=BPdFSxtuCVdKQxgv) ]
