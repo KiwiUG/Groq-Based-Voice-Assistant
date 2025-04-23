@@ -35,3 +35,4 @@ def detect_nyx_wake_word(access_key, ppn_path="wake_words/hey-nyx_en_windows_v3_
         stream.close()
         pa.terminate()
         porcupine.delete()
+#end

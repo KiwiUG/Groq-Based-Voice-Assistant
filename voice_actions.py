@@ -102,3 +102,4 @@ def open_url(url):
         if not url.startswith("http"):
             url = "http://" + url
         webbrowser.open(url)
+#end
