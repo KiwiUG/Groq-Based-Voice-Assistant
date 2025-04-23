@@ -1,85 +1,112 @@
 # Groq-Based-Voice-Assistant
 
-A Python-based voice assistant that uses speech recognition, text-to-speech, and the Groq API (with Llama 3) for natural language understanding. Can perform actions like opening applications, websites, and system commands.
+A Python-based voice assistant that uses speech recognition, text-to-speech, and the Groq API (with Llama 3) for natural language understanding.  
+It can perform actions like opening applications, websites, and executing system commands.
+
+---
 
 ## Features
 
--  Voice input and speech output
--  Context-aware conversations using Groq's Llama 3 model
--  Action execution:
+- Voice input and speech output  
+- Context-aware conversations using Groq's Llama 3 model  
+- Action execution:
   - Open applications (Calculator, Chrome, Word, etc.)
   - Open websites (YouTube, Google, etc.)
   - System commands (lock, shutdown, restart)
-  - Open special folders (Music, Videos, Documents)
+  - Open special folders (Music, Videos, Documents)  
 - Conversation memory for contextual understanding
+
+---
 
 ## Prerequisites
 
-- Python 3.8+
-- Windows OS (Linux/macOS support possible with modifications)
-- Microphone
+- Python 3.8+  
+- Windows OS (Linux/macOS support possible with modifications)  
+- Microphone  
 - Groq API key (free tier available)
+
+---
 
 ## Installation
 
-1. Clone the repository:
-   ->bash
+**1. Clone the repository**
+
+   Run the following commands in your terminal:
+   ```bash
    git clone https://github.com/your-username/voice-assistant.git
    cd voice-assistant
+   ```
 
-Create and activate a virtual environment (recommended):
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Linux/macOS
-source venv/bin/activate
+**2. Create and activate a virtual environment (recommended):**
+  ```bash
+    python -m venv venv
+    # Windows
+    venv\Scripts\activate
+    # Linux/macOS
+    source venv/bin/activate
+  ```
+3. **Install dependencies:**
+  - pip install -r requirements.txt
 
-Install dependencies:
-pip install -r requirements.txt
+  Set up your environment variables:
+  - Rename .env.example to .env
 
-Set up your environment variables:
+  **Add your Groq API key:**
+  GROQ_API_KEY=your_api_key_here
 
-Rename .env.example to .env
 
-Add your Groq API key:
-GROQ_API_KEY=your_api_key_here
+## Project Structure
 
-voice-assistant/
-├── main.py               # Main application logic
-├── voice_actions.py      # Action execution handlers
-├── groq_response.py      # Groq API interface
-├── requirements.txt      # Python dependencies
-├── .env                  # Environment variables (ignored by git)
-├── .env.example          # Example environment file
-└── README.md             # This file
+- `main.py`               – Main application logic  
+- `voice_actions.py`      – Action execution handlers  
+- `groq_response.py`      – Groq API interface  
+- `requirements.txt`      – Python dependencies  
+- `.env`                  – Environment variables (ignored by git)  
+- `.env.example`          – Example environment file  
+- `README.md`             – This file
 
-Important Notes
-API Key Security:
+---
 
-Never commit your .env file to version control
-The .gitignore file should exclude .env by default
-Your Groq API key is sensitive - keep it secure
+## API Key Security
 
-Windows Focus:
+- Never commit your `.env` file to version control.
+- Ensure `.gitignore` excludes `.env` (default behavior).
+- Keep your Groq API key secure.
 
-Application paths are currently Windows-specific
-Modify voice_actions.py for Linux/macOS support
+---
 
-Speech Recognition:
+## Windows Focus
 
-Requires an active internet connection for Google's speech recognition
-For offline use, consider alternative recognizers like pocketsphinx
+- Application paths are currently Windows-specific.
+- For Linux/macOS, update `voice_actions.py` accordingly.
 
-Customization
+---
+
+## Speech Recognition
+
+- Requires an active internet connection (uses Google's speech recognition).
+- For offline use, consider alternatives like `pocketsphinx`.
+
+---
+
+## Customization
+
 To add more applications or commands:
-Edit the app_normalizations dictionary in voice_actions.py
-Add new entries to the apps dictionary with the correct paths
-Update the system prompt in groq_response.py to recognize new commands
+1. Edit the `app_normalizations` dictionary in `voice_actions.py`.
+2. Add new entries to the `apps` dictionary with the correct paths.
+3. Update the system prompt in `groq_response.py` to recognize new commands.
 
-Troubleshooting
-Problem: Speech recognition isn't working
-Solution: Check your microphone permissions and internet connection
-Problem: "Failed to open app" errors
-Solution: Verify application paths in voice_actions.py match your system
-Problem: API errors
-Solution: Verify your Groq API key is correct and has available quota
+---
+
+## Troubleshooting
+
+**Problem:** Speech recognition isn't working  
+**Solution:** Check your microphone permissions and internet connection.
+
+**Problem:** "Failed to open app" errors  
+**Solution:** Verify application paths in `voice_actions.py` match your system.
+
+**Problem:** API errors  
+**Solution:** Verify your Groq API key is correct and has available quota.
+
+---
