@@ -110,3 +110,7 @@ To add more applications or commands:
 **Solution:** Verify your Groq API key is correct and has available quota.
 
 ---
+
+## Video of Working:
+
+[![ Demonstration video ](https://youtu.be/atKrsi1nr5M)]
