@@ -2,9 +2,6 @@
 
 A Python-based voice assistant that uses speech recognition, text-to-speech, and the Groq API (with Llama 3) for natural language understanding. Can perform actions like opening applications, websites, and system commands.
 
-![Voice Assistant Demo](https://via.placeholder.com/800x400?text=Voice+Assistant+Demo) 
-(Consider adding a screenshot or demo GIF here)
-
 ## Features
 
 -  Voice input and speech output
