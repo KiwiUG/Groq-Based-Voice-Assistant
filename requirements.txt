@@ -1,0 +1,7 @@
+openai
+speechrecognition
+pyttsx3
+porcupine
+pvporcupine
+pyaudio
+groq
