@@ -52,8 +52,8 @@ It can perform actions like opening applications, websites, and executing system
   - Rename .env.example to .env
 
   **Add your Groq API key:**
-  GROQ_API_KEY=your_api_key_here
-
+   - GROQ_API_KEY=your_api_key_here
+   -PORCUPINE_ACCESS_KEY=your_access_key
 
 ## Project Structure
 
